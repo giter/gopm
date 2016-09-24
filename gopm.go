@@ -26,7 +26,9 @@ import (
 )
 
 func main() {
+
 	setting.LibraryMode = false
+
 	if err := lib.Run(os.Args); err.HasError {
 		if err.Fatal != nil {
 			log.Fatal("%v", err.Fatal)

@@ -169,10 +169,16 @@ func (n *Node) HasVcs() bool {
 }
 
 func (n *Node) CopyToGopath() error {
+
 	if n.HasVcs() {
 		log.Warn("Package in GOPATH has version control: %s", n.RootPath)
 		return nil
 	}
+
+	return n.ForceCopyToGopath()
+}
+
+func (n *Node) ForceCopyToGopath() error {
 
 	os.RemoveAll(n.InstallGopath)
 	if err := base.CopyDir(n.InstallPath, n.InstallGopath); err != nil {

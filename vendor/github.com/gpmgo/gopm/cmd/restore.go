@@ -65,7 +65,7 @@ func restorePackages(target string, ctx *cli.Context, nodes []*doc.Node) error {
 
 		if n.IsExist() && n.VerString() != "" {
 
-			err = n.CopyToGopath()
+			err = n.ForceCopyToGopath()
 			restoreCount++
 
 			log.Info("Copied %s:%s...", n.ImportPath, n.VerString())
