@@ -1,9 +1,9 @@
-Go Package Manager [![Build Status](https://travis-ci.org/gpmgo/gopm.svg?branch=master)](https://travis-ci.org/gpmgo/gopm) [![Gopm Download](http://gopm.io/badge/github.com/gpmgo/gopm)](http://gopm.io/github.com/gpmgo/gopm)
+Go Package Manager 
 =========================
 
 Gopm (Go Package Manager) is a Go package manage and build tool for Go.
 
-## Version
+## This Version?
 
 THIS is a specified version of gopm add `restore` command
 
@@ -28,7 +28,7 @@ COMMANDS:
    install	link dependencies and go install
    clean	clean all temporary files
    update	check and update gopm resources including itself
-   restore  restore remote package(s) to $GOPATH
+   <b>restore</b>  restore remote package(s) to $GOPATH
    help, h	Shows a list of commands or help for one command
 
 GLOBAL OPTIONS:
