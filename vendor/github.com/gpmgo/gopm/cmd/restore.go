@@ -68,13 +68,14 @@ func restorePackages(target string, ctx *cli.Context, nodes []*doc.Node) error {
 			err = n.ForceCopyToGopath()
 			restoreCount++
 
-			log.Info("Copied %s:%s...", n.ImportPath, n.ValString())
+			log.Warn("Copied %s:%s...", n.ImportPath, n.ValString())
 
 			if err != nil {
 				return err
 			}
 		} else {
-			log.Info("Skipped uncached package: %s", n.VerString())
+
+			log.Info("Skipped uncached or unversioned package: %s", n.VerString())
 			failRestoreConut++
 			continue
 		}
