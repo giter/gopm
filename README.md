@@ -3,30 +3,9 @@ Go Package Manager [![Build Status](https://travis-ci.org/gpmgo/gopm.svg?branch=
 
 Gopm (Go Package Manager) is a Go package manage and build tool for Go.
 
-**News** Try out [gopm.io](http://gopm.io), the online version caching and package download service for Go.
+## Version
 
-Please see **[Documentation](https://github.com/gpmgo/docs)** before you start.
-
-## Requirements
-
-- Go development environment: >= **go1.2**
-
-## Installation
-
-We use [gobuild](http://gobuild.io) to do online cross-platform compiling work.  You can see the full available binary list [here](http://gobuild.io/gpmgo/gopm/).
-
-### Install from source code
-
-    go get -u github.com/gpmgo/gopm
-
-The executable will be produced under `$GOPATH/bin` in your file system; for global use purpose, we recommand you to add this path into your `PATH` environment variable.
-
-## Features
-
-- No requirement for installing any version control system tool like `git` or `hg` in order to download packages.
-- Download, install or build your packages with specific revisions.
-- When building programs with `gopm build` or `gopm install`, everything just happens in its own GOPATH and does not bother anything you've done (unless you told it to).
-- Can put your Go projects anywhere you want (through `.gopmfile`).
+THIS is a specified version of gopm add `restore` command
 
 ## Commands
 
@@ -49,6 +28,7 @@ COMMANDS:
    install	link dependencies and go install
    clean	clean all temporary files
    update	check and update gopm resources including itself
+   restore  restore remote package(s) to $GOPATH
    help, h	Shows a list of commands or help for one command
 
 GLOBAL OPTIONS:

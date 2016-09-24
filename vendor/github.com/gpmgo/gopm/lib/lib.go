@@ -51,6 +51,7 @@ func Run(args []string) *setting.Error {
 		cmd.CmdInstall,
 		cmd.CmdClean,
 		cmd.CmdUpdate,
+		cmd.CmdRestore,
 		// CmdSearch,
 	}
 	app.Flags = append(app.Flags, []cli.Flag{

@@ -18,6 +18,8 @@ package main
 import (
 	"os"
 
+	_ "github.com/go-xorm/xorm"
+
 	"github.com/gpmgo/gopm/lib"
 	"github.com/gpmgo/gopm/modules/log"
 	"github.com/gpmgo/gopm/modules/setting"

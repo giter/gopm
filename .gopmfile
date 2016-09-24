@@ -1,3 +1,4 @@
-[target]
-path = github.com/gpmgo/gopm
+[deps]
+github.com/go-xorm/xorm = tag:v0.5.4
+
 
