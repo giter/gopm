@@ -28,7 +28,7 @@ COMMANDS:
    install	link dependencies and go install
    clean	clean all temporary files
    update	check and update gopm resources including itself
-   <b>restore</b>  restore remote package(s) to $GOPATH
+   **restore**  restore remote package(s) to $GOPATH
    help, h	Shows a list of commands or help for one command
 
 GLOBAL OPTIONS:
